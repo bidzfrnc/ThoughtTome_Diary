@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Roboto+Condensed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+
+header{
+    background-color: #0B0E14;
+    height: 10vh;
+    width: 100%;
+}
+.web{
+    width: 25rem;
+    float: left;
+}
+.web-name{
+    font-size: 4rem;
+    padding-left: 1rem;
+    color: #C8CBDE;
+}
+nav{
+    padding: 1.5rem 1.5rem;
+    float: right;
+}
+
+.links{
+    text-decoration: none;
+    margin: 1.8rem 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #C8CBDE;
+    transition: .2s ease-in-out;
+    background-image: linear-gradient( #C8CBDE 0 0);
+    background-position: 50% 100%;
+    background-size: 0% 0.25rem;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s, background-position 0s 0.2s;
+}
+
+.links:hover, #active{
+    color:#C8CBDE;
+    background-position: 50% 100%;
+    background-size: 100% 0.20rem;
+}
+
+
+
+
+section{
+    height: 90vh;
+    display: flex;
+}
+
+/* START OF CON1 */
+
+.con1{
+    width: 100%;
+    flex-basis: 20%;
+    background-color: #C8CBDE;
+}
+
+.details{
+    width: 95%;
+    height: 22rem;
+    margin: 7rem auto 0;
+}
+.image_box{
+    width: 80%;
+    height: 7rem;
+    margin: 0 auto;
+    border-bottom: .1rem solid #0B0E14;
+}
+.image_profile{
+    height: 6rem;
+    width: 6rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+.info{
+    height: 20rem;
+    width: 95%;
+    margin: 2rem auto 0;
+    color: #0B0E14;
+
+}
+.info-wel{
+    font-weight: 600;
+}
+.info-text{
+    font-size: .8rem;
+    font-weight: 500;
+}
+.about_me_box{
+    height: 15rem;
+    width: 100%;
+}
+
+/* END OF CON1 */
+
+
+
+
+
+/* START OF CON2 */
+
+.con2{
+    width: 100%;
+    flex-basis: 60%;
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    background-color: #C8CBDE;
+}
+
+.upload-box{
+    background-color: #DFE2E9;
+    width: 70%;
+    height: 5rem;
+    margin: 1rem auto;
+    border-radius: .5rem;
+}
+.ask{
+    font-weight: 400;
+    text-align: center;
+    padding-top: .2rem;
+}
+.upload_diary_box{
+    width: 90%;
+    display: flex;
+    margin: 0 auto ;
+}
+
+.upload_diary_btn{
+    width: 40%;
+    height: 1.6rem;
+    display: block;
+    margin: 1rem auto 0;
+    cursor: pointer;
+    background-color: #0B0E14;
+    color: #DFE2E9;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+    border: none;
+    border-radius: .5rem;
+}
+
+.upload_diary_btn:hover{
+    background-color: #C8CBDE;
+    color: #0B0E14;
+}
+
+
+
+
+
+/* START POPUP DIARY UPLOAD */
+.diaryUploadForm{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.diary_formBox{
+    width: 45rem;
+    height: 52rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #C8CBDE;
+}
+
+.diaryformtitle{
+    height: 3rem;
+    width: 100%;
+    margin: .5rem auto 0;
+}
+
+.upload-title{
+    text-align: center;
+    font-size: 2rem;
+    color: #0B0E14;
+}
+
+.diary-field-box{
+    margin: 1rem auto 0;
+    width: 95%;
+    height: 42rem;
+    border-top: .1rem solid #0B0E14;
+}
+
+.label_diary{
+    float: left;
+    clear: left;
+    font-size: 1.2rem;
+    height: 2rem;
+    margin-top: .3rem;
+}
+.diary-content{
+    height: 30rem;
+    width: 43rem;
+    resize: none;
+    margin: 0 auto;
+    margin-top: .3rem;
+    transition: .3s ease-in-out;
+    border: none;
+    border-radius: .3rem;
+    background-color: #F4F4F5;
+}
+
+.diary_input{
+    float: right;
+    width: 20rem;
+    height: 2rem;
+    margin-top: .3rem;
+    outline: none;
+    transition: .3s ease-in-out;
+    border: none;
+    border-radius: .3rem;
+    background-color: #F4F4F5;
+}
+
+.diary_input_cat{
+    float: right;
+    width: 5rem;
+    height: 2rem;
+    margin: .3rem 1rem 0;
+    outline: none;
+    transition: .3s ease-in-out;
+    border: none;
+    border-radius: .3rem;
+    background-color: #F4F4F5;
+}
+.custom_category{
+    display: none;
+    float: right;
+    width: 14rem;
+    height: 2rem;
+    margin-top: .3rem;
+    outline: none;
+    transition: .3s ease-in-out;
+    border: none;
+    border-radius: .3rem;
+    background-color: #F4F4F5;
+}
+
+.diary_input:focus, .diary-content:focus, .custom_category:focus{
+    border: .1rem solid #0B0E14;
+}
+
+
+.upload_btn{
+    display: block;
+    margin: 2rem auto 0;
+    width: 30rem;
+    height: 1.8rem;
+    cursor: pointer;
+    color: #DFE2E9;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+    border: none;
+    border-radius: .5rem;
+    background-color: #0B0E14;
+}
+
+.cancel_btn{
+    display: block;
+    margin: 1.5rem auto 0;    
+    width: 30rem;
+    height: 1.8rem;
+    cursor: pointer;
+    color: #DFE2E9;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+    border: none;
+    border-radius: .5rem;
+    background-color: #0B0E14;
+}
+
+
+
+.cancel_btn:hover, .upload_btn:hover{
+    background-color: #DFE2E9;
+    color: #0B0E14;
+}
+
+/* END POPUP DIARY UPLOAD */
+
+
+
+
+
+
+/* START DIARY BOX */
+.diary-box{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #C8CBDE;
+}
+
+.content-box{
+    max-height: 75vh;
+    height: 60vh;
+    width: 100%;
+    background-color: #DFE2E9;
+    margin-top: 1rem;
+    border-radius: .5rem;
+}
+
+.title-box{
+    width: 90%;
+    height: 4rem;
+    margin: 0 auto;
+    border-bottom:.02rem solid #0B0E14;
+}
+
+.d_title{
+    color: #0B0E14;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding-top: .4rem;
+}
+
+.content{
+    margin: 1rem auto;
+    width: 90%;
+    height: 40vh;
+    border-bottom:.02rem solid #0B0E14;
+    overflow-y: scroll;
+}
+.context{
+    color: #0B0E14;
+    width: 98%;
+}
+.name{
+    margin-top: 1.5rem;
+}
+.others{
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.left{
+    float: left;
+}
+
+.img-name{
+    display: flex;
+    height: 3rem;
+    width: 7rem;
+}
+.uploader_img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: .5rem;
+}
+.r-date{
+    float: right;
+    margin-top: 3rem;
+}
+
+/* END DIARY BOX */
+
+
+
+
+
+/* START OF CON 3 */
+
+
+.con3{
+    width: 100%;
+    flex-basis: 20%;
+    background-color: #C8CBDE;
+}
+
+.iframe-container{
+    width: 100%;
+    height: 20rem;
+    margin-top: 7rem;
+}
+iframe{
+    width: 95%;
+    height: 100%;
+    border-radius: .5rem;
+    margin: 0 auto;
+}
+
+/* END OF CON 3 */
+
+
+
+/* SCROLL WEBKIT */
+.con2::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+.content::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+
+
+
+.content::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #DFE2E9;
+}
+
+.content::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #C8CBDE ;
+}
+
+
+
+

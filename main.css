@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Roboto+Condensed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+
+header{
+    background-color: #0B0E14;
+    height: 10vh;
+}
+
+section{
+    height: 90vh;
+    background-color: #0B0E14;
+    display: flex;
+}
+.container1{
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #0B0E14;
+}
+.con-box{
+    margin: 15rem auto;
+}
+.web-name{
+    color: #C8CBDE;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+}
+.qoute{
+    color: #C8CBDE;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container2{
+    width: 45%;
+    height: 100%;
+}
+.form-box{
+    background-color: #C8CBDE;
+    width: 23rem;
+    height: 22rem;
+    margin: 10rem auto;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px rgb(92, 84, 112, 0.4);
+}
+.loginTitle{
+    text-align: center;
+    color: #0B0E14;
+    font-size: 2rem;
+    padding-top: .5rem;
+}
+.input{
+    margin-top: 1.5rem;
+    height: 7.5rem;
+    border-top: 0.02rem solid slategray;
+    width: 95%;
+    margin: 1.1rem auto;
+}
+.f_label, .f_input{
+    display: block;
+    margin-top: 1rem;
+}
+.f_label{
+    float: left;
+    clear: left;
+    height: 2rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+
+}
+.f_input{
+    float: right;
+    width: 12rem;
+    height: 2rem;
+    outline: none;
+    background-color: #DFE2E9;
+    border: .01rem solid #001615;
+    margin-right: .5rem;
+    border-radius: .2rem;
+    box-shadow: 0 0 5px rgb(92, 84, 112, 0.4);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.f_input:focus {
+    border-color: #5C5470;
+    box-shadow: 0 0 8px rgba(60, 54, 77, 0.7);
+}
+.log_in{
+    width: 50%;
+    height: 1.7rem;
+    border: none;
+    border-radius: .2rem;
+    display: block;
+    margin: .1rem auto;
+    cursor: pointer;
+    background-color: #001615;
+    color: #DFE2E9;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+
+.log_in:hover{
+    background-color: #DFE2E9;
+    color: #001615;
+}
+.f_pass{
+    text-align: center;
+    margin-top: -1rem;
+}
+.forgetpass{
+    font-size: .8rem;
+    color: #402a86;
+}
+
+
+
+
+/* POP-UP SIGN */
+.popUp{
+    height: 3rem;
+    width: 90%;
+    border-top: .1rem solid slategray ;
+    margin: .7rem auto;
+}
+
+.signUp1{
+    display: block;
+    width: 50%;
+    height: 1.7rem;
+    margin: 1.5rem auto;
+    cursor: pointer;
+    background-color: #001615;
+    color: #DFE2E9;
+    border: none;
+    font-weight: 600;
+    border-radius: .2rem;
+    transition: .3s ease-in-out;
+}
+
+.signUp1:hover{
+    background-color: #DFE2E9;
+    color: #001615;
+}
+
+.signUpForm{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background-color: #C8CBDE;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 25rem;
+    height: 50rem;
+    border-radius: 1rem;
+}
+
+.signupTitle{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: .5rem;
+    color: #001615;
+}
+
+.img_profile{
+    width: 5rem;
+    height: 5rem;
+    background-color: #DFE2E9;
+    margin: 0 auto 1rem;
+    border-radius:.5rem;
+}
+
+.img-upload{
+    width: 100%;
+    height: 100%;
+}
+
+.signUpField{
+    border-top: .01rem solid #001615;
+    width: 95%;
+    height: 40rem;
+    margin: .5rem auto;
+    padding-top: 1rem;
+}
+
+.label_signUp{
+    float: left;
+    width: 7.5rem;
+    clear: left;
+    height: 2rem;
+    font-size: 1.1rem;
+    margin-left: .5rem;
+    margin-top: .3rem;
+}
+.profileInput, .musicInput{
+    width: 12rem;
+    float: right;
+    height: 2rem;
+    border: none;
+    outline: none;
+    padding-top: .3rem;
+    cursor: pointer;
+}
+.input_SignUp{
+    width: 12rem;
+    float: right;
+    height: 2rem;
+    border: .01rem solid #001615;
+    border-radius: .2rem;
+    box-shadow: 0 0 5px rgb(92, 84, 112, 0.4);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #DFE2E9;
+}
+.inputs{
+    width: 100%;
+    height: 2.2rem;
+    margin: 0 auto;
+}
+.location, .about_me, .i_frame{
+    width: 100%;
+    height: 4rem;
+    margin: 0 auto;
+}
+.address_SignUp, .aboutme_SignUp, .video_SignUp{
+    float: right;
+    resize: none;
+    width: 12rem;
+    height: 3.8rem;
+    border: .01rem solid #001615;
+    border-radius: .2rem;
+    box-shadow: 0 0 5px rgb(92, 84, 112, 0.4);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #DFE2E9;
+}
+
+.input_SignUp:focus, .address_SignUp:focus, .aboutme_SignUp:focus, .video_SignUp:focus{
+    border-color: #5C5470;
+    box-shadow: 0 0 8px rgba(60, 54, 77, 0.7);
+}
+
+.inputs, .location, .about_me, .i_frame{
+    margin-top: .1rem;
+}
+.sel_gender{
+    float: right;
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    margin-top: .5rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.op_gender{
+    font-size: .8rem;
+    width: 5rem;
+    height: 1.4rem;
+    background-color: #001615;
+    color: #DFE2E9;
+    margin: .1rem .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1.4rem;
+    transition: background-color 0.3s, color 0.3s, width 0.3s, transform 0.3s;
+}
+
+.op_gender:hover {
+    background-color: #DFE2E9;
+    color: #001615;
+    transform: scale(1.03);
+    font-weight: bold;
+}
+
+input[type="radio"]:checked + .op_gender {
+    color: #0B0E14;
+    background-color: #DFE2E9;
+    color: #001615;
+}
+.signUp2{
+    width: 80%;
+    height: 1.7rem;
+    display: block;
+    margin: .6rem auto 0;
+    cursor: pointer;
+    background-color: #001615;
+    color: #DFE2E9;
+    border: none;
+    border-radius: .3rem;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+
+.signUp2:hover{
+    background-color: #DFE2E9;
+    color: #001615;
+}
+
+.close{
+    width: 80%;
+    height: 1.7rem;
+    display: block;
+    margin: .5rem auto;
+    cursor: pointer;
+    background-color: #001615;
+    color: #DFE2E9;
+    border: none;
+    border-radius: .3rem;
+    font-weight: 600;
+}
+
+.close:hover{
+    background-color: #DFE2E9;
+    color: #001615;
+    transition: .3s ease-in-out;
+}
